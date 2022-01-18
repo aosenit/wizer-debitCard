@@ -1,0 +1,48 @@
+.debitCardContainer{
+    height: 100%;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    background-image: url("../../assets/abstract1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    position: relative;
+
+    img{
+        width:50px;
+        margin: .5rem 0;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+
+    
+
+    h3{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h4{
+        margin:1rem 0;
+        font-size: 1rem;
+    }
+
+    .holder{
+        text-align: right;
+        font-size: .8rem;
+        margin-right: 1.5rem;
+    }
+
+    h5{
+        background-color: grey;
+        width: fit-content;
+        padding: .8rem;
+        
+    }
+
+}

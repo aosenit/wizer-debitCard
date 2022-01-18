@@ -1,0 +1,56 @@
+<div class="formContainer">
+  <h2>Form To Create Card</h2>
+
+  <form [formGroup]="formValue" ngNativeValidate>
+    <div class="cardNumber">
+      <label for="cardNumber">Card Name</label>
+      <input
+        type="number"
+        id="cardNumber"
+        name="cardNumber"
+        placeholder="Card Number"
+        formControlName="cardNumber"
+        minLength="16"
+        ng-minlength="16"
+        required="true"
+      />
+    </div>
+
+    <div class="cardHolder">
+      <label for="cardHolder">Card Holder</label>
+      <input
+        type="text"
+        id="cardHolder"
+        name="cardHolder"
+        placeholder="Card Holder"
+        formControlName="cardHolder"
+        required="true"
+      />
+    </div>
+
+    <div class="cardExpiryDate">
+      <label for="cardExpiryDate">Card Expiry Date</label>
+      <input
+        type="date"
+        id="cardExpiryDate"
+        name="cardExpiryDate"
+        placeholder="Card Expiry Date"
+        formControlName="cardExpiryDate"
+        required="true"
+      />
+    </div>
+
+    <div class="cardCVC">
+      <label for="cardCVC">Card CVC</label>
+      <input
+        type="text"
+        id="cardCVC"
+        name="cardCVC"
+        placeholder="Card CVC"
+        formControlName="cardCVC"
+        required="true"
+      />
+    </div>
+    <button type="submit" (click)="addFormData()">Submit</button>
+  </form>
+</div>

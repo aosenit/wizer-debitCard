@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent {
-  title = 'angular-test-four';
+  parentData:any= [
+  ];
+  
+
+  newDebitDataEvent(data:any){
+    data? this.parentData = data: this.parentData = this.parentData;
+  }
 }

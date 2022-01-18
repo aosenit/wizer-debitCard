@@ -1,0 +1,30 @@
+<div class="debitCardContainer">
+  <div class="innerContainer">
+    <h2>WizerTest</h2>
+    <h3>
+      <span>{{ parentData.cardNumber }}</span>
+    </h3>
+    <div class="debitCardIcon">
+      <ng-template
+        [ngIf]="parentData.cardNumber.toString().substring(0, 4) == 5399"
+        ><img src="../../assets/mastercard-logo.png" alt=""
+      /></ng-template>
+      <ng-template
+        [ngIf]="parentData.cardNumber.toString().substring(0, 4) == 4399"
+      >
+        <img src="../../assets/visa-logo.png" alt=""
+      /></ng-template>
+      <ng-template
+        [ngIf]="parentData.cardNumber.toString().substring(0, 4) == 3999"
+        ><img src="../../assets/verve-logo.png" alt=""
+      /></ng-template>
+    </div>
+    <h4 class="holder">
+      <span>Expiry Date:</span>{{ parentData.cardExpiryDate | date: "MM/yy" }}
+    </h4>
+    <h4>{{ parentData.cardHolder }}</h4>
+    <h5>
+      CVC: <span>{{ parentData.cardCVC }}</span>
+    </h5>
+  </div>
+</div>
